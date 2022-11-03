@@ -5,22 +5,211 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>primer proyecto</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <title>javier fernandez portafolio</title>
 </head>
 
 <body>
-    <h1>primer h1</h1>
-    <p>hola a todos</p>
+    <header class="header">
+        <nav class="navbar grid--container">
+            <a class="navbar__logo" href="#"><i class='bx bxs-user-circle' style='color:#ffffff'></i> user</a>
+            <div class="navbar__menu">
+                <a class="btn btn__close" href="#"><i class='bx bx-x navbar__icon'></i></a>
+
+                <ul class="navbar__list">
+                    <li class="navbar__item"><a class="navbar__link" href="#home">Inicio</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#about">Acerca de Mí</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#skills">Mis habilidades</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#experience">Experiencia</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#portafolio">Portafolio</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+            <a class="btn btn__open" href="#"><i class='bx bx-menu  navbar__icon' style='color:#ffffff'></i></a>
+        </nav>
+    </header>
+
+    <main>
+        <!--home-->
+        <section class="home section" id="home">
+            <div class="home-container grid">
+                <div class="home_img">
+                    <img src="assets/img/Rectangle 45.png" alt="imagen de presentacion">
+                </div>
+                <div class="home_data">
+                    <p class="parrafo"> hola, soy javier</p>
+                    <h1 class="titulo">Diseñador y desarollador wed </h1>
+                </div>
+                <div class="home_social ">
+                    <div class="home_social--linkedin">
+                        <i><img class="linkedin--img" src="assets/img/linkedin.svg" alt=""></i>
+                    </div>
+                    <div class="home_social--instagram">
+                        <i><img class="instagram--img" src="assets/img/instagram.svg" alt=""></i>
+                    </div>
+                    <div class="home_social--twitter">
+                        <i><img class="twitter--img" src="assets/img/twitter.svg" alt=""></i>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- about me-->
+        <section class="about_me section" id="about">
+            <div class="about_me-container">
+                <h2 class="section-tittle">Sobre mi</h2>
+                <div>
+                    <p class="parrafo"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur id
+                        voluptatum deserunt
+                        maxime
+                        provident nihil sint at. Cumque, iste ea officia, eos ratione quod illo quam voluptatum, sit
+                        vitae
+                        harum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab dolor dicta, minima inventore
+                        rerum
+                        aliquam architecto officiis. Voluptatum odio beatae numquam perspiciatis temporibus reiciendis
+                        necessitatibus? Architecto magni distinctio numquam ex!</p>
+                </div>
+            </div>
+        </section>
+        <!--skills-->
+        <section class="skills section" id="skills">
+            <div class="skill">
+                <h2 class="section-tittle">Mis habilidades</h2>
+                <div class="skills-content">
+
+                    <div class="skills-content__item">
+                        <div class="skills-content__item2">
+                            <div class="skills-content__icon">
+                                <i class='bx bx-desktop bx-tada-hover' style='color:#ffffff'></i>
+                            </div>
+                            <div class="skills-content__data">
+                                <h3 class="skills-data--tittle">Wed design</h3>
+                                <p class="skills-data--description">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                    elit. Illum
+                                    porro expedita sunt
+                                    os.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-content__item">
+                        <div class="skills-content__item2">
+                            <div class="skills-content__icon">
+                                <i class='bx bxl-react bx-tada-hover'></i>
+                            </div>
+                            <div class="skills-content__data">
+                                <h3 class="skills-data--tittle">Frontend</h3>
+                                <p class="skills-data--description">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                    elit. Illum
+                                    porro expedita sunt
+                                    os.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-content__item">
+                        <div class="skills-content__item2">
+                            <div class="skills-content__icon">
+                                <i class='bx bxl-nodejs bx-tada-hover' style='color:#ffffff'></i>
+                            </div>
+                            <div class="skills-content__data">
+                                <h3 class="skills-data--tittle">Backend</h3>
+                                <p class="skills-data--description">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                    elit. Illum
+                                    porro
+                                    expedita
+                                    sunt
+                                    os.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-content__item">
+                        <div class="skills-content__item2">
+                            <div class="skills-content__icon">
+                                <i class='bx bx-mobile-alt bx-tada-hover'></i>
+                            </div>
+                            <div class="skills-content__data">
+                                <h3 class="skills-data--tittle">Mobile design</h3>
+                                <p class="skills-data--description">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                    elit. Illum
+                                    porro
+                                    expedita sunt
+                                    os.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--experience-->
+        <section class="experience section" id="experience">
+            <h2 class="section-tittle">Experiencia</h2>
+            <div class="experience-container">
+                <div class="experience-content">
+                    <div class="experience__item">
+                        <img src="https://academlo-port1.netlify.app/assets/img/Wizeline.png" alt="inreactive design"
+                            class="experience__img">
+                        <div class="experience__data">
+                            <h3 class="experience__data-tittle"> inreactive desing</h3>
+                            <p class="experience__data-descripcion">1 año</p>
+                        </div>
+                    </div>
+                    <div class="experience__item">
+                        <img src="https://academlo-port1.netlify.app/assets/img/Google.png" alt="inreactive design"
+                            class="experience__img">
+                        <div class="experience__data">
+                            <h3 class="experience__data-tittle"> inreactive desing</h3>
+                            <p class="experience__data-descripcion">1 año</p>
+                        </div>
+                        <div class="experience__item">
+                            <img src="https://academlo-port1.netlify.app/assets/img/Hootsuite.png"
+                                alt="inreactive design" class="experience__img">
+                            <div class="experience__data">
+                                <h3 class="experience__data-tittle"> inreactive desing</h3>
+                                <p class="experience__data-descripcion">1 año</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--portafolio-->
+        <section class="portafolio" id="portafolio">
+            <div class="portafolio__container">
+                <h2>Portafolio</h2>
+                <div></div>
+            </div>
+        </section>
+        <!--contac-->
+        <section class="contac section" id="contact">
+            <div class="contac__container">
+                <h2>contacto</h2>
+                <div></div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p> © 2022. Todos los derechos reservados a mí
+            </p>
+        </div>
+    </footer>
+    <script>
+        const btnMenu = document.querySelector('.btn__open')
+        const btnClose = document.querySelector('.btn__close')
+        const Menu = document.querySelector('.navbar__menu')
 
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum explicabo impedit recusandae excepturi earum
-        fugiat totam harum et architecto assumenda ipsa iste illo a laboriosam, quaerat qui tempore molestias
-        perferendis?</p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sint reiciendis saepe facere veritatis
-        est architecto possimus perspiciatis cum consectetur atque deserunt, dolorem, reprehenderit consequatur
-        accusantium doloremque tempora inventore! Dolorum.
-    </p>
+        btnMenu.onclick = function () {
+            Menu.classList.add('show--menu')
+        }
+
+        btnClose.onclick = function () {
+            Menu.classList.remove('show--menu')
+        }
+    </script>
+
 </body>
 
 </html>
