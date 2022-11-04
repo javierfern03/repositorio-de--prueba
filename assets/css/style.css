@@ -138,7 +138,6 @@ a {
 }
 
 .home-container {
-    /* background-color: lightslategray; */
     height: 450px;
 }
 
@@ -147,7 +146,6 @@ img {
 }
 
 .home_img {
-    /* background-color: lightblue; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,6 +154,7 @@ img {
 }
 
 .titulo {
+    display: inline;
     font-size: 48px;
     padding: 0 0;
     color: ffff;
@@ -171,17 +170,15 @@ img {
 }
 
 .home_data {
-    /* background-color: lightcyan; */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 200px;
+    height: 230px;
 }
 
 .home_social {
     display: flex;
-    /* background-color: lightseagreen; */
     justify-content: center;
     flex-direction: row;
     height: 50px;
@@ -193,21 +190,15 @@ img {
 .home_social--linkedin {
     width: 50px;
     height: 50px;
-    /* background-color: antiquewhite; */
 }
 
-.linkedin--img,
-.instagram--img,
-.twitter--img {
-    width: 45px;
-    height: 45px;
+.bxl-linkedin-square,
+.bxl-instagram,
+.bxl-twitter {
+    font-size: 35px;
 }
 
 /* ABOUT ME */
-
-.about_me {
-    position: relative;
-}
 
 .about_me-container>* {
     display: flex;
@@ -215,22 +206,14 @@ img {
     text-align: center;
 }
 
-/* @media (max-width: 768px) {
-    .about_me-container {
-        max-width: 900px;
-    }
-} */
-
 .about_me-container {
-    max-width: 800px;
-    position: relative;
+    max-width: 700px;
     margin: 0 auto;
 }
 
 /* SKILLS */
 
 .skill {
-    /* background-color: lightseagreen; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -253,7 +236,6 @@ img {
 
 @media (max-width: 768px) {
     .skills-content {
-        /* margin: 40px 0px; */
         display: flex;
         flex-direction: column;
         gap: 40px;
@@ -266,7 +248,9 @@ img {
     color: #a1a1a1;
 }
 
-i {
+.bx-desktop,
+.bxl-react,
+.bxl-nodejs {
     margin-top: 10px;
     font-size: 30px;
 }
