@@ -4,6 +4,7 @@ body {
 }
 
 html {
+    font-family: 'Rubik', sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -38,13 +39,20 @@ a {
 .section-tittle {
     margin-bottom: 30px;
     margin-top: 0;
-    font-size: 32px;
+    font-size: 36px;
 }
 
 .grid--container {
     max-width: 1024px;
     display: grid;
     margin: 0 20px;
+}
+
+.parrafo {
+    font-size: 20px;
+    color: #717171;
+    top: 0;
+
 }
 
 
@@ -105,7 +113,7 @@ a {
 .btn__open,
 .btn__close,
 .navbar__logo i {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     color: #111;
 }
 
@@ -138,11 +146,17 @@ a {
 }
 
 .home-container {
-    height: 450px;
+    height: 547px;
 }
 
 img {
     height: 200px;
+}
+
+.presentacion {
+    color: #717171;
+    font-size: 25px;
+
 }
 
 .home_img {
@@ -174,22 +188,25 @@ img {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 230px;
+
+
 }
 
 .home_social {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
-    height: 50px;
+    gap: 10px;
+    margin-top: 20px;
 
 }
 
 .home_social--instagram,
 .home_social--twitter,
 .home_social--linkedin {
-    width: 50px;
-    height: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 .bxl-linkedin-square,
@@ -199,6 +216,9 @@ img {
 }
 
 /* ABOUT ME */
+.about_me__p {
+    margin: 0 15px;
+}
 
 .about_me-container>* {
     display: flex;
@@ -239,7 +259,6 @@ img {
         display: flex;
         flex-direction: column;
         gap: 40px;
-
     }
 }
 
@@ -291,25 +310,52 @@ img {
 /* EXPERIENCIE */
 
 .experience {
-    background-color: rgba(138, 138, 113, 0.397);
+    background-color: #1a1a1a;
     width: 100%;
-    height: 400px;
+    height: auto;
 }
 
 .experience-container {
-    background-color: lightcoral;
+    display: grid;
 }
 
-/* .experience-content>* {} */
+.experience-content>* {
+    background-color: #4d4747;
+    border: 1px solid rgba(255, 255, 255, 0.486);
+}
+
+/* .experience {} */
+
+.experience__tittle {
+    margin: 0 auto;
+}
 
 .experience-content {
     display: flex;
-    flex-direction: row;
-    background-color: lightgray;
-    overflow: auto;
-    position: relative;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .experience__img {
-    height: 60px;
+    width: 60px;
+    height: auto;
+}
+
+.experience__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience__data>* {
+    margin: 10px 0;
 }
