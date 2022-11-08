@@ -55,15 +55,7 @@ a {
 
 }
 
-.btn {
-    display: inline-block;
-    padding: 15px 30px;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform .3s ease-in-out;
-}
+
 
 /* NAVBAR */
 .header {
@@ -562,4 +554,14 @@ input:valid~label {
     border-radius: 5px;
     background-color: #ffffff;
     border: 1px solid #ffffff;
+}
+
+.contact__form-button {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
 }
