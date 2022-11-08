@@ -182,26 +182,70 @@
             <div class="portafolio__container">
                 <h2 class="section-tittle portafolio__tittle">Portafolio</h2>
                 <div class="portafolio__content">
-                    <div>
+                    <div class="portafolio__item">
                         <img src="assets/img/ejemplo 1.png" alt="ejemplo1">
                     </div>
-                    <div>
+                    <div class="portafolio__item">
                         <img src="assets/img/ejemplo 2.png" alt="ejemplo2">
                     </div>
-                    <div>
+                    <div class="portafolio__item">
                         <img src="assets/img/ejemplo 3.png" alt="ejemplo3">
                     </div>
-                    <div>
+                    <div class="portafolio__item">
                         <img src="assets/img/ejemplo6.png" alt="ejemplo6">
                     </div>
                 </div>
             </div>
         </section>
         <!--contac-->
-        <section class="contac section" id="contact">
+        <section class="contanc section" id="contact">
             <div class="contac__container">
-                <h2>contacto</h2>
-                <div></div>
+                <h2 class="section-tittle contact-title">contacto</h2>
+                <div>
+                    <div class="contact__contact">
+                        <div class="contact__item">
+                            <div class="contact_img__container">
+                                <img src="assets/img/phone.svg" alt="" class="img_contact">
+                            </div>
+                            <div class="contact__data">
+                                <h3 class="contact__tittle">numero</h3>
+                                <p class="contact-description"><strong>04248450633</strong></p>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact_img__container">
+                                <img src="assets/img/mail 1.svg" alt="" class="img_contact">
+                            </div>
+                            <div class="contact__data">
+                                <h3 class="contact__tittle">email</h3>
+                                <p class="contact-description"><strong>jf2876430@gmail.com</strong> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__form section">
+                        <h3 class=" section-tittle">Enviar mensaje</h3>
+
+                        <form id="form" class="contact__form-container">
+
+                            <div class="contact__form-group">
+                                <label for="name" class="contact__form-label">Nombre</label>
+                                <input type="text" id="name" class="contact__form-input">
+                            </div>
+
+                            <div class="contact__form-group">
+                                <label for="email" class="contact__form-label">Correo</label>
+                                <input type="email" id="email" class="contact__form-input">
+                            </div>
+
+                            <div class="contact__form-group">
+                                <label for="message" class="contact__form-label">Mensaje</label>
+                                <textarea id="message" cols="30" rows="10" class="contact__form-input"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn contact__form-button">Enviar</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
 
