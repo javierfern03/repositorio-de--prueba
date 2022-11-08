@@ -25,7 +25,6 @@ a {
     text-decoration: none;
 }
 
-
 .grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -45,7 +44,7 @@ a {
 .grid--container {
     max-width: 1024px;
     display: grid;
-    margin: 0 20px;
+    margin: 0 auto;
 }
 
 .parrafo {
@@ -141,17 +140,13 @@ a {
     color: rgb(0, 0, 0);
 }
 
-/* HOME */
+/*   HOME     */
 .home {
-    margin-top: 80px;
+    margin-top: 95px;
 }
 
 .home-container {
     height: 547px;
-}
-
-img {
-    height: 200px;
 }
 
 .presentacion {
@@ -165,7 +160,11 @@ img {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 200px;
+}
+
+.img_profile {
+    border-radius: 40px;
+    height: 185px;
 }
 
 .titulo {
@@ -271,13 +270,6 @@ img {
     max-width: 900px;
 }
 
-@media (max-width: 768px) {
-    .skills-content {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
-}
 
 .skills-data--description {
     margin-top: 0px;
@@ -404,14 +396,14 @@ img {
     background-color: #a52222 !;
 }
 
-.portafolio__item:hover {
-    transition: .5;
-    background-color: #dacdcd;
-}
-
 .input-group {
     position: relative;
 }
+
+.portafolio-img {
+    height: 200px;
+}
+
 
 .input {
     border: solid 1.5px #9e9e9e;
@@ -447,6 +439,14 @@ input:valid~label {
 }
 
 /* CONTACT  */
+
+.contact__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+    max-width: 500px;
+}
 
 .contact__contact {
     margin: 40px 20px;
@@ -488,7 +488,9 @@ input:valid~label {
 }
 
 .contact-title {
-    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    margin: 90px auto 50px;
 }
 
 .contact__data {
@@ -516,11 +518,8 @@ input:valid~label {
     display: grid;
 } */
 
-.contac__container {
-    display: grid;
-}
 
-.contatc__info-data {
+.contact__info-data {
     font-style: normal;
     display: flex;
     flex-direction: column;
@@ -564,4 +563,68 @@ input:valid~label {
     border-radius: 8px;
     cursor: pointer;
     transition: transform .3s ease-in-out;
+}
+
+
+
+/*  MEDIA QUERIES   */
+
+
+@media screen and (min-width: 768px) {
+
+    /* .skills-content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    } */
+    .experience-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        gap: 40px;
+        max-width: 900px;
+    }
+
+    .portafolio__content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        gap: 40px;
+        max-width: 800px;
+    }
+
+    .btn__open,
+    .btn__close {
+        display: none;
+    }
+
+    .navbar__link {
+        color: #ffffff;
+    }
+
+    .navbar__list {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .navbar__item {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .navbar {
+        height: 90px;
+    }
+
+    .navbar__menu {
+        max-width: 900px;
+    }
 }
